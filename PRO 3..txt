@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+        // write your code here
+
+
+      int x,y;
+      Scanner ip = new Scanner(System.in);
+      System.out.println("Enter first value (x)");
+      x = ip.nextInt();
+
+      System.out.println("Enter second value (y)");
+        y = ip.nextInt();
+        
+        System.out.println("Before swapping" + " " + "x :" + x);
+        System.out.println("Before swapping" + " " + "y :"+ y);
+        System.out.println();
+
+        
+        // MAIN FORMULA
+       x=x+y;
+       y = x-y;
+       x = x-y;
+       // MAIN FORMULA
+       
+
+        System.out.println("After swapping"+" " +"x :"+ x);
+        System.out.println("After swapping"+" " +"y :"+ y);
+
+
+
+    }
+}

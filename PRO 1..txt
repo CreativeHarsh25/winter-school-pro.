@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+        // write your code here
+
+        int row;
+
+        Scanner harami = new Scanner(System.in);
+        System.out.println("Enter seqence");
+        row = harami.nextInt();
+
+        for(int i =1; i<=row; i++){
+
+            for(int  j= 1;j<=i;j++){
+
+                System.out.print(((char)(64+j) + " "));
+            }
+            System.out.println();
+        }
+
+
+
+    }
+}

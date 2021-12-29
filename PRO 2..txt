@@ -1,0 +1,47 @@
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+        // write your code here
+
+        int a = 0, n, d = 0, c;
+        Scanner bd = new Scanner(System.in);
+        System.out.println("Enter the number");
+        n = bd.nextInt();
+
+        if (n <= 0|| n==1) {
+            System.out.print("Number is neither prime or neither composite");
+        }
+
+        else {
+
+            for (c = 1; c <= n; c++) {
+
+                if (n % c == 0) {
+
+
+                    a++;
+
+                }
+
+            }
+
+
+            if (a > 2) {
+
+
+                System.out.println("Number is composite but");
+                System.out.println("It is not a prime number");
+            }
+
+            else {
+
+                System.out.println("Its not cmposite but");
+                System.out.println("It is a prime number");
+
+            }
+
+
+        }
+    }
+}

@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+        // write your code here
+
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number");
+        int a = sc.nextInt();
+        
+         int k = a;
+         int sum =0;
+         while (a>0)
+         {
+             int i = a%10;
+             sum = sum +i;
+             a = a/10;
+         }
+         
+        if (k % sum==0)
+        {
+            System.out.println("Number is Niven");
+        }
+        
+        else
+        {
+            System.out.println("Number not Niven");
+        }
+
+    }
+}

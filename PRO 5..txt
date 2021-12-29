@@ -1,0 +1,54 @@
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+        // write your code here
+
+        int c;
+    Scanner an = new Scanner(System.in);
+        System.out.println("Enter call duration (in min) ");
+
+    c = an.nextInt();
+
+    if (c>=1 && c<=5){
+
+        System.out.println("Your bill is :" + (c*1) + "₹");
+    }
+
+    else if(c>=6 && c<=10){
+
+        double  vd;
+        vd= c-5;
+        vd= vd*1.5;
+        vd= 5+vd;
+        System.out.println("Your bill is :" + "₹"+ (vd));
+    }
+
+    else if (c>=11 && c<=20){
+
+        double dd;
+        dd = c-10;
+        dd = dd*2;
+        dd = (5*1)+(5*1.5)+dd;
+        System.out.println("Your bill is :" + "₹"+ (dd));
+    }
+
+    else if(c>=21 && c<=30){
+
+        double ed;
+        ed = c-20;
+        ed = ed*3;
+        ed = (5*1)+(5*1.5)+(10*2)+ed;
+        System.out.println("Your bill is :" + "₹"+ (ed));
+    }
+
+    else {
+
+        double fd;
+        fd = c-30;
+        fd = fd*4;
+        fd = (5*1)+(5*1.5)+(10*2)+(10*3)+fd;
+        System.out.println("Your bill is :" + "₹"+ (fd));
+    }
+    }
+}
